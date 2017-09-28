@@ -13,7 +13,7 @@ public class ConsumerController {
     ComputeClient computeClient;
 
     @RequestMapping(value = "/add", method = RequestMethod.GET)
-    public Integer add() {
+    public String add() {
         return computeClient.add(10, 20);
     }
 
